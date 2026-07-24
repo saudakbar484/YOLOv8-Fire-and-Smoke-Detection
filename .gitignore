@@ -1,0 +1,28 @@
+# YOLOv8 Fire & Smoke Detection Gitignore
+
+# Cache and python files
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Large generated outputs / predictions
+output/
+runs/detect/predict*/
+runs/detect/val/
+
+# Model weight checkpoints (keep best.pt, ignore last.pt)
+runs/detect/train/weights/last.pt
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Output video artifacts
+*.avi
+*.3gp
